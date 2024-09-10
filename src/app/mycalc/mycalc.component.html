@@ -1,0 +1,62 @@
+<!-- <div class="body">
+    <div class="calculator">
+      <div class="display">
+        <div id="display">0</div>
+      </div>
+      <div class="buttons">
+        <button class="btn" data-action="clear">AC</button>
+        <button class="btn" data-action="sign">+/-</button>
+        <button class="btn" data-action="percent">%</button>
+        <button class="btn operator" data-action="divide">÷</button>
+        <button class="btn" data-number="7">7</button>
+        <button class="btn" data-number="8">8</button>
+        <button class="btn" data-number="9">9</button>
+        <button class="btn operator" data-action="multiply">×</button>
+        <button class="btn" data-number="4">4</button>
+        <button class="btn" data-number="5">5</button>
+        <button class="btn" data-number="6">6</button>
+        <button class="btn operator" data-action="subtract">-</button>
+        <button class="btn" data-number="1">1</button>
+        <button class="btn" data-number="2">2</button>
+        <button class="btn" data-number="3">3</button>
+        <button class="btn operator" data-action="add">+</button>
+        <button class="btn" data-number="0"  class="zero">0</button>
+        <button class="btn" data-action="decimal">.</button>
+        <button class="btn" data-action="calculate">=</button>
+      </div>
+    </div>
+  
+</div> -->
+<div class="body">
+    
+<div class="calculator">
+    <div class="display">
+      <div>{{ displayValue }}</div>
+    </div>
+    <div class="buttons">
+      <button class="btn" (click)="clear()">AC</button>
+      <button class="btn" (click)="toggleSign()">+/-</button>
+      <button class="btn" (click)="percent()">%</button>
+      <button class="btn operator" (click)="setOperator('divide')">÷</button>
+   
+      <button class="btn" (click)="inputDigit(7)">7</button>
+      <button class="btn" (click)="inputDigit(8)">8</button>
+      <button class="btn" (click)="inputDigit(9)">9</button>
+      <button class="btn operator" (click)="setOperator('multiply')">×</button>
+   
+      <button class="btn" (click)="inputDigit(4)">4</button>
+      <button class="btn" (click)="inputDigit(5)">5</button>
+      <button class="btn" (click)="inputDigit(6)">6</button>
+      <button class="btn operator" (click)="setOperator('subtract')">-</button>
+   
+      <button class="btn" (click)="inputDigit(1)">1</button>
+      <button class="btn" (click)="inputDigit(2)">2</button>
+      <button class="btn" (click)="inputDigit(3)">3</button>
+      <button class="btn operator" (click)="setOperator('add')">+</button>
+
+      <button class="btn" class="zero" (click)="inputDigit(0)">0</button>
+      <button class="btn" (click)="inputDecimal()">.</button>
+      <button class="btn" (click)="calculate()">=</button>
+    </div>
+  </div>
+</div>
